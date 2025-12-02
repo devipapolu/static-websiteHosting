@@ -1,0 +1,27 @@
+How to host stati websites on S3 bucket 
+step1: open aws account
+step2: go to s3 bucket
+step3:create a bucket with unique name
+* Bucket name: unique
+*create bucket
+step4: upload files
+* open the bucket 
+*add files
+*click on upload
+step5: click on file and it shows a url  andaccess them in a global 
+*Its shows error bcoz we block the public access (That's way its showing access denined)
+*click on all the files which are in bucket andgo topermissions unblock the public access
+*still it showing access denined bcos static website hosting is disable
+step 6: Go to  bucket properties go to edit give the document name(index.html) and  enable the static website hosting
+* save changes
+*still shows access denined
+step 7:bcoz we need to make public using ACL(Access control list)
+*go to permissions scroll down until you see the object ownership
+*click on edit
+*enabled acl and save changes
+step 8: go to bucket and tap the bucket which we create ans select all thefiles and tap on actions
+* make ppublic using acl
+
+ACCESS on the BROWSER with URL
+                                                      successfully completed
+           
